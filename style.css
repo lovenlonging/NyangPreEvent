@@ -156,13 +156,13 @@ footer {
     }
 
     .bg-title {
-
+        margin-top: 0px;
         display: flex;
         justify-content: center;
     }
 
     .img-title {
-
+        margin-top: 0px;
         width: 240px;
         height: 160px;
     }
