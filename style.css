@@ -68,6 +68,26 @@ footer {
     font-size: 15px;
 }
 
+.input-top {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-image: url('images/EditBox.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 3vh;
+}
+
+.edt-top {
+    width: 65%;
+    border: 0;
+    background: transparent;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
 .bg-sub {
     max-width: 540px;
     margin-top: -20px;
