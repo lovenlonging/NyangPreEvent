@@ -109,7 +109,7 @@ footer {
     .bg-main {
         max-width: 540px;
         background-image: url('images/Box0_0.png');
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
@@ -161,7 +161,7 @@ footer {
     }
 
     .img-title {
-        margin-top: 80px;
+        margin-top: 40px;
         width: 280px;
         height: 200px;
     }
@@ -172,7 +172,8 @@ footer {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 80%;
+
         aspect-ratio: 1.57 / 1;
         display: flex;
         justify-content: center;
@@ -195,7 +196,7 @@ footer {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 80%;
         aspect-ratio: 1.2 / 1;
         margin: 0 auto;
     }
