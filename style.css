@@ -3,19 +3,23 @@ body {
     margin: 0;
     padding: 0;
     min-width: 440px;
-    height: 100%;
-    /* 추가: body와 html의 높이를 100%로 설정 */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
-    /* 수정: 뷰포트 전체 높이로 설정 */
+    height: 100%;
     background-image: url('images/Background.svg');
-    background-size: cover;
-    /* 수정: 배경 이미지를 꽉 차게 설정 */
+    background-size: contain;
     background-position: center;
+
     background-repeat: no-repeat;
     max-width: 1280px;
 }
@@ -97,7 +101,23 @@ footer {
 
 }
 
-@media (max-width:590px) {
+@media (max-width: 590px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        min-height: 100vh;
+        /* 최소 높이를 화면 전체로 설정 */
+    }
 
     .container {
         width: 100%;
@@ -111,25 +131,33 @@ footer {
         background-repeat: no-repeat;
     }
 
+    footer {
+        text-align: center;
+        margin-top: auto;
+        /* 항상 화면 하단에 위치 */
+    }
+
     .bg-title {
-        margin-top: 20px;
+        margin-top: 0px;
         display: flex;
         justify-content: center;
+        height: 100%;
     }
 
     .img-title {
-        margin-top: 80px;
-        width: 280px;
-        height: 200px;
+        margin-top: 20px;
+        width: 240px;
+        height: 160px;
     }
 
     .bg-main {
         max-width: 540px;
         background-image: url('images/Box0_0.png');
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 75%;
+
         aspect-ratio: 1.57 / 1;
         display: flex;
         justify-content: center;
@@ -142,7 +170,7 @@ footer {
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
-        font-size: 1em;
+        font-size: 15px;
     }
 
     .bg-sub {
@@ -152,69 +180,59 @@ footer {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 75%;
         aspect-ratio: 1.2 / 1;
         margin: 0 auto;
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-link {
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px;
     }
 }
 
-
-@media (max-width:440px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        height: 100%;
-        background-image: url('images/Background.svg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    .bg-title {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .img-title {
-        margin-top: 80px;
-        width: 280px;
-        height: 200px;
-    }
-
-    .bg-main {
-        max-width: 540px;
-        background-image: url('images/Box0_0.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: ;
-        aspect-ratio: 1.57 / 1;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
+@media (max-width: 565px) {
     .input-main {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
-        font-size: 1em;
+        font-size: 14px;
     }
+}
 
-    .bg-sub {
-        max-width: 540px;
-        margin-top: -20px;
-        background-image: url('images/Box1_0.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        aspect-ratio: 1.2 / 1;
+@media (max-width: 530px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         margin: 0 auto;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 495px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 11px;
     }
 }
