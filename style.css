@@ -2,17 +2,19 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    height: 100%;
 }
 
 body {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     background-image: url('images/Background.png');
     background-size: cover;
     background-position: center;
@@ -20,10 +22,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 720px;
 }
 
 main {
-    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .bg-title,
@@ -56,7 +62,6 @@ main {
 }
 
 .input-main {
-    margin-top: 1vh;
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -67,17 +72,20 @@ main {
 
 .input-top {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-self: center;
-    border: 0;
-    background: transparent;
     background-image: url('images/EditBox.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 40vw;
-    height: 5vh;
-    padding: 0 2%;
+    width: 50%;
+    height: 3vh;
+}
+
+.edt-top {
+    width: 35%;
+    border: 0;
+    background: transparent;
 }
 
 .bg-sub {
