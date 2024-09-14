@@ -43,6 +43,7 @@ main {}
 }
 
 .bg-main {
+    margin-top: 30px;
     background-image: url('images/Box0.png');
     background-size: cover;
     background-position: center;
@@ -71,6 +72,7 @@ main {}
 }
 
 .bg-sub {
+    margin-top: -20px;
     background-image: url('images/Box1.png');
     background-size: cover;
     background-position: center;
