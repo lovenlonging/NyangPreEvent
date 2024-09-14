@@ -139,6 +139,17 @@ footer {
         aspect-ratio: 1.2 / 1;
         margin: 0 auto;
     }
+
+    .link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-link {
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px;
+    }
 }
 
 
@@ -226,5 +237,16 @@ footer {
         width: 70%;
         aspect-ratio: 1.2 / 1;
         margin: 0 auto;
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-link {
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px;
     }
 }
