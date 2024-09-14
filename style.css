@@ -207,6 +207,17 @@ footer {
     }
 }
 
+@media (min-height: 915px) {
+    .container {
+        padding-top: 100px;
+        /* 필요에 따라 값 조정 */
+    }
+
+    .bg-main {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 565px) {
     .input-main {
         display: flex;
