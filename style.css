@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
     height: 100vh;
 
 }
@@ -15,6 +16,7 @@ html {
 
 body {
     width: 90%;
+    height: 100vh;
     background-image: url('images/Background.png');
     background-size: cover;
     background-position: center;
@@ -29,7 +31,7 @@ main {}
 }
 
 .bg-title {
-    margin-top: 60px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
