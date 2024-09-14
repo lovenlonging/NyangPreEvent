@@ -48,6 +48,26 @@ main {}
     background-position: center;
     background-repeat: no-repeat;
     aspect-ratio: 1.57 / 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2rem;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.input-top {
+    background-image: url('images/EditBox.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 40px;
 }
 
 .bg-sub {
