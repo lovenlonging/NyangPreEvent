@@ -2,37 +2,47 @@ html,
 body {
     margin: 0;
     padding: 0;
-    min-width: 440px;
+    height: 100%;
 }
 
 body {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
+    min-height: 100vh;
+    /* 최소 높이를 화면 전체로 설정 */
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
+    /* 수정: 뷰포트 전체 높이로 설정 */
     background-image: url('images/Background.svg');
-    background-size: contain;
+    background-size: cover;
+    /* 수정: 배경 이미지를 화면에 꽉 차게 */
     background-position: center;
-
     background-repeat: no-repeat;
-    max-width: 1280px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    /* 항상 화면 하단에 위치 */
 }
 
 .bg-title {
-    margin-top: 100px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .img-title {
-    width: 360px;
-    height: 240px;
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
 }
 
 .bg-main {
@@ -41,7 +51,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 540px;
+    width: 75%;
+
     aspect-ratio: 1.57 / 1;
     display: flex;
     justify-content: center;
@@ -52,30 +63,9 @@ body {
 .input-main {
     display: flex;
     justify-content: center;
-    justify-self: center;
     flex-direction: column;
-    font-size: 18px;
-    text-align: center;
-}
-
-.input-top {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-image: url('images/EditBox.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 70%;
-    height: 3vh;
-}
-
-.edt-top {
-    width: 65%;
-    border: 0;
-    background: transparent;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 15px;
 }
 
 .bg-sub {
@@ -85,20 +75,20 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 540px;
+    width: 75%;
     aspect-ratio: 1.2 / 1;
     margin: 0 auto;
-}
-
-
-footer {
-    text-align: center;
 }
 
 .link {
     display: flex;
     justify-content: center;
+}
 
+.img-link {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
 }
 
 @media (max-width: 590px) {
