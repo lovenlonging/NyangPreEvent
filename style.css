@@ -270,3 +270,13 @@ footer {
         font-size: 11px;
     }
 }
+
+@media (max-width: 400px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+}
