@@ -52,7 +52,28 @@ body {
 .input-main {
     display: flex;
     justify-content: center;
+    justify-self: center;
     flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+}
+
+.input-top {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-image: url('images/EditBox.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 3vh;
+}
+
+.edt-top {
+    width: 65%;
+    border: 0;
+    background: transparent;
     margin: 0 auto;
     font-size: 1em;
 }
@@ -80,80 +101,7 @@ footer {
 
 }
 
-@media (max-width:590px) {
-
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        height: 100%;
-        background-image: url('images/Background.svg');
-        background-size: cover;
-        background-position: center;
-
-        background-repeat: no-repeat;
-
-    }
-
-    .bg-title {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .img-title {
-        margin-top: 80px;
-        width: 280px;
-        height: 200px;
-    }
-
-    .bg-main {
-        max-width: 540px;
-        background-image: url('images/Box0_0.png');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        aspect-ratio: 1.57 / 1;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .input-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-        font-size: 1em;
-    }
-
-    .bg-sub {
-        max-width: 540px;
-        margin-top: -20px;
-        background-image: url('images/Box1_0.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        aspect-ratio: 1.2 / 1;
-        margin: 0 auto;
-    }
-
-    .link {
-        display: flex;
-        justify-content: center;
-    }
-
-    .img-link {
-        width: 30px;
-        height: 30px;
-        margin: 10px 10px;
-    }
-}
-
-
-@media (max-width: 440px) {
+@media (max-width: 590px) {
 
     html,
     body {
@@ -224,7 +172,7 @@ footer {
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
-        font-size: 0.8em;
+        font-size: 15px;
     }
 
     .bg-sub {
@@ -248,5 +196,45 @@ footer {
         width: 30px;
         height: 30px;
         margin: 10px 10px;
+    }
+}
+
+@media (max-width: 565px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 530px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 495px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    .input-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 11px;
     }
 }
