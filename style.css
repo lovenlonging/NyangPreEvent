@@ -67,8 +67,8 @@ footer {
     flex-direction: column;
     margin: 0 auto;
     font-size: 18px;
-    height: 270px;
-    margin-bottom: 50px;
+    height: 260px;
+    margin-bottom: 60px;
 }
 
 .input-top {
@@ -105,7 +105,7 @@ footer {
 }
 
 .input-check {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,10 +216,12 @@ footer {
 
     .input-main {
         display: flex;
-        justify-content: center;
+        justify-content: end;
         flex-direction: column;
         margin: 0 auto;
         font-size: 15px;
+        height: 270px;
+        margin-bottom: 40px;
     }
 
     .bg-sub {
