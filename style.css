@@ -11,6 +11,7 @@ body {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
+    min-width: 400px;
     /* 최소 높이를 화면 전체로 설정 */
 }
 
@@ -56,7 +57,7 @@ footer {
 
     aspect-ratio: 1.57 / 1;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     margin: 0 auto;
 }
@@ -64,10 +65,10 @@ footer {
 .input-main {
     display: flex;
     justify-content: end;
+    text-align: center;
     flex-direction: column;
     margin: 0 auto;
     font-size: 18px;
-    height: 260px;
     margin-bottom: 60px;
 }
 
@@ -206,21 +207,19 @@ footer {
         background-position: center;
         background-repeat: no-repeat;
         width: 75%;
-
         aspect-ratio: 1.57 / 1;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         flex-direction: column;
         margin: 0 auto;
     }
 
     .input-main {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         flex-direction: column;
         margin: 0 auto;
         font-size: 16px;
-        height: 260px;
         margin-bottom: 60px;
     }
 
@@ -306,61 +305,59 @@ footer {
 
 @media (min-height: 915px) {
     .container {
-        padding-top: 100px;
-        /* 필요에 따라 값 조정 */
+        padding-top: 70px;
     }
 
     .bg-main {
-        margin-top: 50px;
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    .bg-sub {
+        width: 90%;
     }
 }
 
 @media (max-width: 565px) {
     .input-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
         font-size: 14px;
+        margin-bottom: 60px;
     }
 }
 
 @media (max-width: 530px) {
     .input-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
         font-size: 13px;
+        margin-bottom: 60px;
     }
 }
 
 @media (max-width: 495px) {
     .input-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
         font-size: 12px;
+        margin-bottom: 50px;
     }
 }
 
 @media (max-width: 440px) {
     .input-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
         font-size: 11px;
+        margin-bottom: 45px;
+    }
+
+    .input-check {
+        margin-top: 0px;
+        font-size: 13px;
+    }
+
+    .btn-send {
+        margin-top: 0px;
     }
 }
 
 @media (max-width: 400px) {
     .input-main {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
         font-size: 10px;
+        margin-bottom: 40px;
     }
 }
