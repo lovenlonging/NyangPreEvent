@@ -58,69 +58,99 @@ footer {
 
 .bg-main {
     max-width: 540px;
-    background-image: url('images/Box0_0.png');
+    background-image: url('images/Box0.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 75%;
-
+    width: 95%;
     aspect-ratio: 1.57 / 1;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
     margin: 0 auto;
 }
 
 .input-main {
-    display: flex;
-    justify-content: end;
+    height: 100%;
+    padding: 15% 10% 10% 10%;
+    box-sizing: border-box;
     text-align: center;
-    flex-direction: column;
-    margin: 0 auto;
-    font-size: 18px;
-    margin-bottom: 60px;
+}
+
+.txt-title {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.line-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.line {
+    width: 80%;
+    height: 3px;
+    background: #E4C18F
+}
+
+.txt-info1 {
+    margin-top: 1vh;
+    font-size: 1.3vh;
 }
 
 .input-top {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-self: center;
+}
+
+.edt-top {
+    padding: 20px;
+    /* 입력 필드 내의 글씨가 10px 안쪽에 위치 */
+    border: 0;
+    background: transparent;
     background-image: url('images/EditBox.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 70%;
-    height: 3vh;
-}
-
-.edt-top {
-    width: 65%;
-    border: 0;
-    background: transparent;
-    margin: 0 auto;
-    font-size: 1em;
+    height: 2vh;
     box-sizing: border-box;
-    /* 패딩과 보더를 크기에 포함시킴 */
-    padding: 0;
+    /* 패딩이 크기에 영향을 주지 않도록 설정 */
 }
 
 .edt-top:focus {
     border: 0;
-    /* 포커스 시 border 변경 방지 */
-    padding: 0;
-    /* 패딩 변경 방지 */
+    /* 테두리 없음 */
     outline: none;
-    /* 포커스 시 외곽선 제거 */
+    /* 포커스 시 외곽선 없음 */
+    padding: 20px;
+    /* 포커스 시에도 글씨가 10px 안쪽에 위치 */
+    background: transparent;
+    background-image: url('images/EditBox.png');
+    /* 배경 이미지 유지 */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 2vh;
+    box-sizing: border-box;
 }
 
 .input-check {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    width: auto;
+    align-items: end;
+
+}
+
+.txt-info2 {
+    margin-top: 1vh;
+    font-size: 1.3vh;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .btn-send {
@@ -131,9 +161,6 @@ footer {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-self: center;
     width: 70%;
     height: 3vh;
 }
@@ -145,7 +172,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 75%;
+    width: 95%;
     aspect-ratio: 1.2 / 1;
     margin: 0 auto;
 }
