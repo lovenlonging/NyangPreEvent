@@ -15,14 +15,32 @@ body {
 }
 
 .container {
-    max-width: 720px;
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
     background-image: url('images/Background.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.container main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container main .bg-title {
+    height: auto;
+}
+
+.container footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 footer {
