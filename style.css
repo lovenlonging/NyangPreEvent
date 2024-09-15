@@ -11,11 +11,6 @@ body {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    min-width: 400px;
-    background-image: url('images/Background.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     /* 최소 높이를 화면 전체로 설정 */
 }
 
@@ -23,8 +18,11 @@ body {
     max-width: 720px;
     width: 100%;
     margin: 0 auto;
-
-
+    height: 100vh;
+    background-image: url('images/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -37,7 +35,7 @@ footer {
     margin-top: 0px;
     display: flex;
     justify-content: center;
-    height: 100%;
+
 }
 
 .img-title {
@@ -162,7 +160,7 @@ footer {
         margin-top: 0px;
         display: flex;
         justify-content: center;
-        height: 100%;
+
     }
 
     .img-title {
