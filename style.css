@@ -12,6 +12,10 @@ body {
     width: 100%;
     min-height: 100vh;
     min-width: 400px;
+    background-image: url('images/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* 최소 높이를 화면 전체로 설정 */
 }
 
@@ -19,13 +23,8 @@ body {
     max-width: 720px;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
-    /* 수정: 뷰포트 전체 높이로 설정 */
-    background-image: url('images/Background.svg');
-    background-size: cover;
-    /* 수정: 배경 이미지를 화면에 꽉 차게 */
-    background-position: center;
-    background-repeat: no-repeat;
+
+
 }
 
 footer {
@@ -152,31 +151,11 @@ footer {
 }
 
 @media (max-width: 590px) {
-
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        min-height: 100vh;
-        /* 최소 높이를 화면 전체로 설정 */
-    }
-
     .container {
         width: 100%;
         margin: 0 auto;
-        height: 100vh;
-        /* 수정: 뷰포트 전체 높이로 설정 */
         background-image: url('images/Background.svg');
         background-size: cover;
-        /* 수정: 배경 이미지를 화면에 꽉 차게 */
         background-position: center;
         background-repeat: no-repeat;
     }
