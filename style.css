@@ -98,6 +98,7 @@ footer {
 }
 
 .input-top {
+    margin-top: 0.8vh;
     display: flex;
     justify-content: center;
     align-self: center;
