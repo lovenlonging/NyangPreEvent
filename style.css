@@ -151,14 +151,6 @@ footer {
 }
 
 @media (max-width: 590px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        background-image: url('images/Background.svg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 
     footer {
         text-align: center;
