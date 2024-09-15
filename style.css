@@ -75,6 +75,7 @@ footer {
 }
 
 .txt-title {
+    margin-top: 0.8vh;
     font-size: 1.2em;
     font-weight: 800;
 }
