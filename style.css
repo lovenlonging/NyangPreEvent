@@ -69,13 +69,13 @@ footer {
 
 .input-main {
     height: 100%;
-    padding: 15% 10% 10% 10%;
+    padding: 12% 10% 10% 10%;
     box-sizing: border-box;
     text-align: center;
 }
 
 .txt-title {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 800;
 }
 
@@ -92,7 +92,7 @@ footer {
 }
 
 .txt-info1 {
-    margin-top: 1vh;
+    margin-top: 0.8vh;
     font-size: 1.3vh;
 }
 
