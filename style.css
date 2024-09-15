@@ -63,13 +63,16 @@ footer {
 
 .input-main {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 18px;
+    height: 270px;
+    margin-bottom: 50px;
 }
 
 .input-top {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -90,7 +93,6 @@ footer {
     box-sizing: border-box;
     /* 패딩과 보더를 크기에 포함시킴 */
     padding: 0;
-    /* 패딩을 0으로 설정 */
 }
 
 .edt-top:focus {
@@ -100,6 +102,29 @@ footer {
     /* 패딩 변경 방지 */
     outline: none;
     /* 포커스 시 외곽선 제거 */
+}
+
+.input-check {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.btn-send {
+    margin-top: 10px;
+    border: 0;
+    background: transparent;
+    background-image: url('images/Button_0.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 70%;
+    height: 3vh;
 }
 
 .bg-sub {
