@@ -228,7 +228,7 @@ footer {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
 
     .txt-info1 {
         font-size: 90%;
@@ -271,7 +271,7 @@ footer {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
 
     .txt-info1 {
         font-size: 70%;
@@ -287,5 +287,43 @@ footer {
 
     .txt-info4 {
         font-size: 70%;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .txt-info1 {
+        font-size: 65%;
+    }
+
+    .txt-info2 {
+        font-size: 65%;
+    }
+
+    .txt-info3 {
+        font-size: 65%;
+    }
+
+    .txt-info4 {
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 310px) {
+
+    .txt-info1 {
+        font-size: 60%;
+    }
+
+    .txt-info2 {
+        font-size: 60%;
+    }
+
+    .txt-info3 {
+        font-size: 60%;
+    }
+
+    .txt-info4 {
+        font-size: 60%;
     }
 }
