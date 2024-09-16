@@ -79,23 +79,26 @@ footer {
     margin-top: 2%;
     font-size: 1.2em;
     font-weight: 800;
+    height: 18%;
 }
 
 .line-box {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 2%;
 }
 
 .line {
-    width: 80%;
-    height: 3px;
+    width: 85%;
+    height: 100%;
     background: #E4C18F
 }
 
 .txt-info1 {
     margin-top: 2%;
-    font-size: 75%;
+    font-size: 100%;
+    height: 10%;
 }
 
 .input-top {
@@ -146,7 +149,7 @@ footer {
 
 .txt-info2 {
     margin-top: 1%;
-    font-size: 80%;
+    font-size: 100%;
 }
 
 .btn-box {
@@ -193,12 +196,13 @@ footer {
 }
 
 .img-gift {
-    width: 40vw;
-    height: 13vh;
+    width: 40%;
+    height: 36%;
 }
 
 .txt-info3 {
-    font-size: 100%
+    font-size: 100%;
+    height: 6%;
 }
 
 .link {
@@ -207,9 +211,53 @@ footer {
 }
 
 .img-link {
-    width: 30px;
-    height: 30px;
-    margin: 10px 10px;
+    width: 10%;
+    height: 10%;
+    margin: 2% 2%;
 }
 
-@media (max-width: 590px) {}
+
+@media (max-width: 480px) {
+
+    .txt-info1 {
+        font-size: 90%;
+    }
+
+    .txt-info2 {
+        font-size: 90%;
+    }
+
+    .txt-info3 {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .txt-info1 {
+        font-size: 80%;
+    }
+
+    .txt-info2 {
+        font-size: 80%;
+    }
+
+    .txt-info3 {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .txt-info1 {
+        font-size: 70%;
+    }
+
+    .txt-info2 {
+        font-size: 70%;
+    }
+
+    .txt-info3 {
+        font-size: 70%;
+    }
+}
