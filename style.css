@@ -191,7 +191,7 @@ footer {
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 3vh;
+    padding-bottom: 6%;
     box-sizing: border-box;
 }
 
@@ -244,6 +244,11 @@ footer {
 
     .txt-info4 {
         font-size: 90%;
+    }
+
+    .img-gift {
+        width: 39%;
+        height: 37%;
     }
 }
 
