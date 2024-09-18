@@ -92,7 +92,8 @@ footer {
 .line {
     width: 85%;
     height: 100%;
-    background: #E4C18F
+    /* background: #E4C18F */
+    background: transparent;
 }
 
 .txt-info1 {
@@ -142,6 +143,7 @@ footer {
 }
 
 .input-check {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,13 +165,14 @@ footer {
 }
 
 .btn-send {
+    cursor: pointer;
     border: 0;
     background: transparent;
     background-image: url('images/Button_0.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
