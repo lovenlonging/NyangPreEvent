@@ -96,8 +96,12 @@
         // 데이터 전송 함수
         function sendData() {
             var edt_text = document.getElementById("edt_text").value;
-            console.log('입력된 이메일: ' + edt_text);
-            console.log('체크박스 상태: ' + isChecked); // 체크박스 상태 출력
+            if (isChecked) {
+                console.log('입력된 이메일: ' + edt_text);
+                console.log('체크박스 상태: ' + isChecked); // 체크박스 상태 출력
+            } else {
+                alert('check box에 체크해줘. 일본어 알려줘.');
+            }
         }
     </script>
 </body>
