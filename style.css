@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'MOBO';
+    src: url('fonts/MOBO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,
 body {
     margin: 0;
@@ -87,6 +94,7 @@ footer {
     font-size: 160%;
     font-weight: 800;
     height: 18%;
+    font-family: 'MOBO', sans-serif;
 }
 
 .line-box {
@@ -104,14 +112,14 @@ footer {
 }
 
 .txt-info1 {
-    margin-top: 2%;
+    margin-top: 2.5%;
     font-size: 90%;
     height: 10%;
     font-family: 'YasashisaGothicBold-V2', sans-serif;
 }
 
 .input-top {
-    margin-top: 2%;
+    margin-top: 2.5%;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -151,7 +159,7 @@ footer {
 }
 
 .input-check {
-    margin-top: 2%;
+    margin-top: 1.5%;
     cursor: pointer;
     display: flex;
     justify-content: center;
