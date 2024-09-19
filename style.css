@@ -144,11 +144,12 @@ footer {
 }
 
 .edit-text {
-    width: 50%;
+    width: 60%;
     border: 0;
     background: transparent;
     box-sizing: border-box;
     text-align: center;
+    font-size: 80%;
 }
 
 .edit-text:focus {
@@ -364,6 +365,11 @@ footer {
     }
 
     .txt-info1 {
+        font-size: 70%;
+    }
+
+    .edit-text {
+
         font-size: 70%;
     }
 
