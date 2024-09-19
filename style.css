@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'YasashisaGothicBold-V2';
+    src: url('fonts/YasashisaGothicBold-V2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,
 body {
     margin: 0;
@@ -77,7 +84,7 @@ footer {
 
 .txt-title {
     margin-top: 2%;
-    font-size: 180%;
+    font-size: 160%;
     font-weight: 800;
     height: 18%;
 }
@@ -98,8 +105,9 @@ footer {
 
 .txt-info1 {
     margin-top: 2%;
-    font-size: 100%;
+    font-size: 90%;
     height: 10%;
+    font-family: 'YasashisaGothicBold-V2', sans-serif;
 }
 
 .input-top {
@@ -109,7 +117,6 @@ footer {
     align-self: center;
     width: 100%;
     height: 15%;
-
 }
 
 .edt-top {
@@ -133,6 +140,7 @@ footer {
     border: 0;
     background: transparent;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .edit-text:focus {
@@ -143,16 +151,23 @@ footer {
 }
 
 .input-check {
+    margin-top: 2%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.check-box {
+    width: 6%;
+    margin-top: 0.6%;
 }
 
 .txt-info2 {
+    padding-left: 1%;
     margin-top: 1%;
-    font-size: 100%;
+    font-size: 75%;
+    font-family: 'YasashisaGothicBold-V2', sans-serif;
 }
 
 .btn-box {
@@ -168,12 +183,35 @@ footer {
     cursor: pointer;
     border: 0;
     background: transparent;
-    background-image: url('images/Button_0.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 70%;
+    /* 고정된 너비 */
     height: 100%;
+    /* 고정된 높이 */
+    display: flex;
+    /* 콘텐츠를 가운데로 정렬하기 위해 추가 */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-send-content {
+    display: flex;
+    /* 내부 요소를 가로로 정렬 */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+
+}
+
+.spinner-border {
+    margin-right: 10px;
+    /* 로딩 스피너와 텍스트 사이 간격 */
 }
 
 .bg-sub {
@@ -207,6 +245,7 @@ footer {
 .txt-info3 {
     font-size: 100%;
     height: 6%;
+    font-family: 'YasashisaGothicBold-V2', sans-serif;
 }
 
 .txt-box {
@@ -233,7 +272,7 @@ footer {
 }
 
 
-@media (max-width: 490px) {
+@media (max-width: 500px) {
 
     .txt-title {
         font-size: 160%;
@@ -261,10 +300,10 @@ footer {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 550px) {
 
     .txt-title {
-        font-size: 150%;
+        font-size: 155%;
         height: 17%;
     }
 
@@ -285,7 +324,7 @@ footer {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
 
     .txt-title {
         font-size: 140%;
