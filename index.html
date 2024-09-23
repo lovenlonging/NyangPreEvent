@@ -24,8 +24,8 @@
                 <img class="img-title" src="images/Title.png" />
             </div>
 
-            <div class="bg-main">
-                <div class="input-main">
+            <div class="bg-main" :style="{ backgroundImage: `url(${backgroundImageUrl})` }">
+                <div class="input-main" v-show="!isInputMainHidden">
                     <div class="txt-title">
                         メールアドレスの登録
                     </div>
@@ -97,7 +97,9 @@
             data: {
                 isLoading: false,
                 email: '', // 이메일 입력값을 저장하는 변수
-                isChecked: false // 체크박스 상태를 저장하는 변수
+                isChecked: false, // 체크박스 상태를 저장하는 변수
+                backgroundImageUrl: 'images/Box0.png',
+                isInputMainHidden: false
             },
             computed: {
                 checkBoxImage: function () {
@@ -124,29 +126,30 @@
                         this.isLoading = true;
                         console.log('입력된 이메일: ' + this.email);
                         console.log('체크박스 상태: ' + this.isChecked); // 체크박스 상태 출력
+                        this.isInputMainHidden = true;
+                        this.backgroundImageUrl = 'images/Box2_0.png';
+                        // const vue = this;
+                        // let parameter = new FormData();
+                        // parameter.append('email', this.email);
 
-                        const vue = this;
-                        let parameter = new FormData();
-                        parameter.append('email', this.email);
-
-                        try {
-                            const { data } = await API.dataFetch({
-                                type: 'post',
-                                url: '/preEvent1/insert',
-                                data: parameter
-                            });
-                            if (data.msg !== 'success') {
-                                console.error('error1 : ' + data.msg);
-                                alert(data.msg);
-                            } else {
-                                this.email = '';
-                                alert('성공! 저장완료!');
-                            }
-                        } catch (error) {
-                            console.log('>>>>>> error : ' + error);
-                            alert('서버 요청에 실패했습니다.');
-                        }
-                        this.isLoading = false;
+                        // try {
+                        //     const { data } = await API.dataFetch({
+                        //         type: 'post',
+                        //         url: '/preEvent1/insert',
+                        //         data: parameter
+                        //     });
+                        //     if (data.msg !== 'success') {
+                        //         console.error('error1 : ' + data.msg);
+                        //         alert(data.msg);
+                        //     } else {
+                        //         this.email = '';
+                        //         //
+                        //     }
+                        // } catch (error) {
+                        //     console.log('>>>>>> error : ' + error);
+                        //     alert('서버 요청에 실패했습니다.');
+                        // }
+                        // this.isLoading = false;
                     } else {
                         alert('check box에 체크해줘. 일본어 알려줘.');
                         this.isLoading = false;
