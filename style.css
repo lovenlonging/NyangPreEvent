@@ -35,7 +35,6 @@ body {
 }
 
 .container main {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +57,7 @@ footer {
 }
 
 .bg-title {
-    margin-top: 0px;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
 
@@ -79,6 +78,7 @@ footer {
     width: 95%;
     aspect-ratio: 1.57 / 1;
     margin: 0 auto;
+    margin-top: 10%;
 }
 
 .input-main {
@@ -225,7 +225,6 @@ footer {
 
 .bg-sub {
     max-width: 540px;
-    margin-top: -20px;
     background-image: url('images/Box1_0.png');
     background-size: cover;
     background-position: center;
@@ -233,6 +232,7 @@ footer {
     width: 95%;
     aspect-ratio: 1.2 / 1;
     margin: 0 auto;
+    margin-top: -5%;
 }
 
 
@@ -266,6 +266,7 @@ footer {
     width: 50%;
     font-size: 100%;
     height: 6%;
+    font-family: 'YasashisaGothicBold-V2', sans-serif;
 }
 
 .link {
